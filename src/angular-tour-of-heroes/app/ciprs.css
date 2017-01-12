@@ -1,0 +1,787 @@
+body {
+    padding-top: 27px;
+    background-color: #F2F2F2;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+a {
+    cursor: pointer;
+    color: #0681e8;
+}
+a:hover, a:focus {
+    color: #23527c;
+}
+
+dl.help1 dt {
+  font-weight: bold;
+  padding: 0.5em 0 0.5em 0;
+}
+dl.help1 dd {
+  text-align: justify;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+dl.help2 dt {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em 0 0.5em 1.5em;
+}
+dl.help2 dd {
+  text-align: justify;
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+h4.help {
+  background-color: #fddb8a;
+  color: #333;
+  padding: 4px 6px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.table-hover > tbody> tr > td.separator {
+    border-bottom: 1em solid #dbb72a;
+    border-top: 5em solid #DBB72A;
+    background-color: #fdf8a1;
+    /* border: solid; */
+    border-width: 2px 0;
+    font-size: medium;
+    color: #000;
+    padding-top: 4px;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.table-hover > tbody> tr > td.separator2 {
+ //   border-bottom: 1em solid #dbb72a;
+ //   border-top: 5em solid #DBB72A;
+    border-bottom: none;
+    border-top: none;
+
+    background-color: #D8EEF8;
+    /* border: solid; */
+    border-width: 2px 0;
+    font-size: medium;
+    color: #000;
+    padding-top: 4px;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+/*suppresses the 'x' clear button on IE 11*/
+input::-ms-clear {  display: none; width : 0; height: 0; }
+input::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* IE has a double scrollbar when modals are displayed at a zoom >100%
+  http://stackoverflow.com/questions/17045132/scrollbar-overlay-in-ie10-how-do-you-stop-that*/
+@-ms-viewport{ width: auto !important; }
+
+
+.ciprs-banner-bar-1 {
+    background-color: #6394c5;
+    min-height:5px;
+    width: 100%;
+}
+.ciprs-banner-bar-2 {
+    background-color: #2d5e96;
+    height: 16px;
+    width: 100%;
+}
+
+.summary-inset-list {
+    margin-bottom: 0px;
+    margin-left: 15px;
+    list-style-position: hanging;
+    padding: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.summary-inset-list>lh {
+  margin-left: -15px;
+}
+
+.three-column {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.four-column {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.legal-disclaimer {
+    font-size: 14px;
+    color: gray;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.remove-from-cart {
+    color: #23527c;
+    white-space: normal;
+    font-weight: bold;
+}
+
+.ciprs-field-error {
+    color:#bd302d;
+    font-size:12px;
+    font-weight:700;
+}
+
+.has-error .form-control {
+  background-color: #F5D2D2;
+  color:#bd302d;
+}
+
+.alert-danger {
+  color: #bd302d;
+  background-color: #F5D2D2;
+  border-color: #bd302d;
+}
+
+.has-error .control-label {
+  color:#bd302d;
+}
+
+.table-nowrap {
+    table-layout:fixed;
+}
+.table-nowrap td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-ciprs {
+  font-size: 14px;
+  padding: 3px 12px 2px 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(180deg,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,.2) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.btn-ciprs:hover {
+  background: linear-gradient(180deg,
+      rgba(0,0,0,.1) 0%,
+      rgba(0,0,0,.3) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.btn-ciprs:focus,
+.btn-ciprs.focus {
+  background-color: #dbb72a;
+  border: 2px solid #dbb72a;
+ outline-style: none;
+}
+
+.btn-ciprs:active,
+.btn-ciprs.active {
+  background: linear-gradient(0deg,
+      rgba(0,0,0,.1) 0%,
+      rgba(0,0,0,.3) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.btn-ciprs:active:focus,
+.btn-ciprs.active:focus,
+.btn-ciprs:active.focus,
+.btn-ciprs.active.focus {
+  background: linear-gradient(0deg,
+      rgba(0,0,0,.1) 0%,
+      rgba(0,0,0,.3) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #dbb72a;
+  outline-style: none;
+}
+btn-ciprs.disabled,
+.btn-ciprs[disabled],
+fieldset[disabled] .btn-ciprs,
+.btn-ciprs.disabled:hover,
+.btn-ciprs[disabled]:hover,
+fieldset[disabled] .btn-ciprs:hover,
+.btn-ciprs.disabled:focus,
+.btn-ciprs[disabled]:focus,
+fieldset[disabled] .btn-ciprs:focus,
+.btn-ciprs.disabled.focus,
+.btn-ciprs[disabled].focus,
+fieldset[disabled] .btn-ciprs.focus,
+.btn-ciprs.disabled:active,
+.btn-ciprs[disabled]:active,
+fieldset[disabled] .btn-ciprs:active,
+.btn-ciprs.disabled.active,
+.btn-ciprs[disabled].active,
+fieldset[disabled] .btn-ciprs.active
+{
+  background: linear-gradient(180deg,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,.2) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.instruction {
+    color: #626262;
+}
+
+.alert-info {
+    color: #000;
+    background-color: #d9edf7;
+}
+
+.search-section-header {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.case-info-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.spacer {
+    margin-bottom: 10px;
+}
+
+.table-search-results>thead {
+    background-color: #484e75;
+
+    border-top: 2px solid #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+.table-search-results>thead>tr>th {
+        border-left-style:none;
+        border-right-style:none;
+}
+
+
+.table-search-results>tbody>tr:hover {
+    background-color: #e7ebf2;
+}
+
+.table-search-results>tbody>tr:hover>#control-td {
+  background-color: white;
+}
+
+.table-search-results {
+    background-color: white;
+    border-style: none;
+}
+
+.table-summary {
+    margin: 0px 8px 0px 8px;
+}
+.table-summary>thead {
+    background-color: #d4e2ea;
+}
+
+.tab-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-style: none;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.nav-tabs.nav-justified {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 0px;
+    background-color: transparent;
+}
+
+.nav-tabs.nav-justified>li {
+  background-color: transparent;
+}
+
+.well {
+  background-color: white;
+}
+
+.well-sm {
+  padding: 3px 9px;
+}
+
+.button-blue {
+    color: #0088cc;
+}
+.button-blue:hover {
+    color: #286090;
+}
+
+.remove-case-blue {
+    color: #337ab7;
+}
+
+.remove-case-blue:hover {
+    color: #286090;
+}
+
+.ciprs-panel {
+    background-color: #F5F5F5;
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+
+.panel-group > .panel {
+  border-style: none;
+  border-top: 2px solid #a1a1a1;
+}
+
+.panel-default > .panel-heading {
+    background-color: #fff;
+    border-style: none;
+}
+
+.panel-default > .panel-heading:hover {
+    background-color: #e7ebf2;
+}
+
+.panel-default > .panel-heading {
+  padding: 7px 15px;
+  border-style: none;
+}
+
+.panel-default>.panel-heading+.panel-collapse > .panel-body {
+  border-style: none;
+}
+
+.panel-title>a {
+  color: #0681E8;
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+    border-color: #EAE9E9;
+    background-color: #EAE9E9;
+    font-weight:bold;
+  }
+
+  .nav>li>a:hover, .nav>li>a:focus {
+    background-color: #e7ebf2;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .nav-tabs.nav-justified>li>a {
+    border: #dadada 1px solid;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-color: white;
+  }
+}
+
+.modal.fade.no-animation-modal {
+  opacity: 1;
+}
+.modal.fade.no-animation-modal .modal-dialog, .modal.in.no-animation-modal .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/* pick a better selector */
+.table-hover > tbody> tr > td {
+    cursor:pointer;
+    border-color: #BBB;
+    border-right-style:none;
+    border-left-style:none;
+}
+
+.summary-label {
+    font-weight: bold;
+}
+.summary-label:after { /*TODO - should this be ::after*/
+    content: "\a0 ";
+  }
+
+/* REQUIREMENTS STYLE - Leave as "display: none;" in production, but do not remove. */
+.field-code {
+    display: none;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: yellow;
+}
+/* REQUIREMENTS STYLE - Do not remove. */
+.field-code.after {
+    content: "\a0 ";
+}
+
+/*this should be done globally in less... we don't want any borders on anything*/
+.form-control {
+    border-radius: 0px;
+    height: 26px;
+    padding: 3px 12px;
+}
+
+/*Now this looks like a hack which could get you into trouble... but otherwise can't provide a backdrop on long pages*/
+.modal-backdrop.in {
+    min-height: 1000000px;
+}
+
+.ciprs-extra-wide-modal-window > .modal-dialog {
+    width: 90%;
+}
+.ciprs-disclaimer-modal-window > .modal-dialog {
+    width: 80%
+}
+
+.modal-header {
+    background-color: #484e75;
+}
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-footer {
+  background-color: #eee;
+}
+
+.help-question {
+    opacity: .6;
+ }
+
+.tooltip.in {
+    opacity: .95;
+}
+.tooltip-inner {
+    max-width: 420px;
+    width: 420px;
+    background-color: #286090;
+}
+
+.last-viewed-case {
+    background-color: #e7ebf2;
+}
+
+.large-font-mode {
+     font-size: large;
+}
+
+.debug {
+     display: none;
+}
+
+.summary-accordion-label {
+  font-size: 14px;
+  font-weight:bold;
+  padding: 0px;
+  width: 30%;
+  display: inline-block;
+}
+
+.summary-accordion-label-detail {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.panel-default>.panel-heading:hover .summary-accordion-label,
+.panel-default>.panel-heading:hover .summary-accordion-label-detail {
+    text-decoration: underline;
+    color: #23527c;
+}
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:focus {
+  background-color: #fff;
+  /* border-width: 2px 2px 0px 2px;  This didn't remove bottom border. */
+  border-left: 2px solid #D8D7D7;
+  border-top: 2px solid #D8D7D7;
+  border-right: 2px solid #D8D7D7;
+  border-bottom: 1px solid #fff;
+}
+
+.offense-count {
+    margin: 0px;
+}
+
+.steps-indicator li a {
+  text-transform: none;
+  font-size: larger;
+}
+.steps-indicator li.current a {
+  color: #000000;
+}
+.steps-indicator li.editing a {
+  color: #000000;
+}
+.steps-indicator li.current a:before {
+  background-color: #9DB9C8;
+}
+.steps-indicator li.done a:before {
+  background-color: #e6e6e6;
+}
+.steps-indicator li.editing a:before {
+  background-color: #9DB9C8;
+}
+
+.search-results-divider {
+   border: 1px solid #DBB72A;
+   margin: 7px 7px 10px 0px;
+}
+
+#about-privacy-dl > dt {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0.5em 0 0.5em 0;
+}
+#about-privacy-dl > dd {
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+#help-dl > dt {
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 0.5em 0 0.5em 0;
+}
+#help-dl > dd {
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+#aboutmodalheader {
+    background-color: white;
+}
+#helpmodalheader {
+    background-color: white;
+}
+#samplepdfmodalheader {
+    background-color: white;
+}
+#summaryhelpmodalheader {
+    background-color: white;
+}
+
+#pilotbanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1035;
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 190px 143px;
+  transform-origin: 190px 143px;
+}
+
+#pdf {
+/*    width: 98%;
+    height: 500px;*/
+    border: 5px solid rgb(179, 206, 249);
+}
+#pdf object {
+   display: block;
+   border: solid 1px #666;
+}
+
+#briefcaseCount {
+    -webkit-transition:all ease-in-out 0.25s;
+    transition:all ease-in-out 0.25s;
+    opacity:1;
+}
+#briefcaseCount.ng-hide {
+    opacity:0;
+}
+
+#caseInformation > .modal-body {
+     padding: 0px;
+}
+.btn-case {
+  font-size: 14px;
+  padding: 3px 12px 2px 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.btn-case:hover {
+  background: linear-gradient(180deg,
+      rgba(0,0,0,.1) 0%,
+      rgba(0,0,0,.3) 100%
+      );
+  background-color: #dbb72a;
+  border: 2px solid #ad8a3f;
+}
+
+.btn-case:focus,
+.btn-case.focus {
+  background-color: #dbb72a;
+  border: 2px solid #dbb72a;
+ outline-style: none;
+}
+
+.btn-case:active,
+.btn-case.active {
+  font-size: 14px;
+  padding: 3px 12px 2px 12px;
+  letter-spacing: 1px;
+  color: #000080;
+  font-weight: bold;
+  box-shadow:none;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.btn-label-case{
+  font-size: 14px;
+  padding: 3px 12px 2px 12px;
+  letter-spacing: 1px;
+  color: #000080;
+  font-weight: bold;
+  box-shadow:none;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  cursor: default;
+}
+
+.btn-label-case:active,
+.btn-label-case.active
+{
+  font-size: 14px;
+  padding: 3px 12px 2px 12px;
+  letter-spacing: 1px;
+  color: #000080;
+  font-weight: bold;
+  box-shadow:none;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  cursor: default;
+}
+
+div#caseInformationPanel ul.nav {
+    padding-top: 5px;
+}
+
+.agency-data-format {
+	font-family:Helvetica;
+	font-size:14px;
+}
+
+.agency-label-bold {
+	font-family:Helvetica;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.agency-data-inline {
+	font-family:Helvetica;
+	font-size:14px;
+	display:inline;
+}
+
+.agency-label-bold-inline {
+	font-family:Helvetica;
+	font-size:14px;
+	font-weight:bold;
+	display:inline;
+}
+
+/*For removing the border for all the popups in CIPRS*/
+.popover > .popover-inner > .popover-title {
+     background-color: #d4e2ea;
+     font-weight: bold; 
+     border: 0;
+}
+
+/*For consistent background/title color for the title on all popups in CIPRS*/
+#top > .popover {
+	border: 0;
+	padding:0;
+	max-width:420px;
+}
+
+#chargedOffensesPopover > .modal-body {
+     padding: 0px;  
+}
+
+#caseStatusPopover > .modal-body {
+	padding: 0px;         
+}
+
+#agencyPopOver > .popover {
+	max-width: 420px;
+	border: 0;
+	padding:0;
+}
+
+
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+}
